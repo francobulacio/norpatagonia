@@ -322,7 +322,7 @@ El que ajusta en el eje y es justify-content
 .formLinksContainer{
     flex-direction: column;
     align-items: center;
-    grid-template-rows: 500px 500px 501px;
+    grid-template-rows: 500px 500px 500px;
 }
 
 .linksFooterContainer{
