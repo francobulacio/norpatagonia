@@ -1,0 +1,255 @@
+/* NORMALIZE */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* HEADER */
+.navbarContainer{
+    background-color: #023355;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+}
+.titleContainer{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+
+    width: 60%;
+    height: 100%;
+}
+.linksContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.titleContainer h1{
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a{
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+/* INDEX */
+
+.mainContentIndex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 1%;
+}
+.subtitleContainer h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.cardInfoContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/*
+
+CUANDO FLEX DIRECTION ES ROW (valor por defecto)
+El que ajusta en el eje x es justify-content
+CUANDO FLEX DIRECTION ES ROW (valor por defecto)
+El que ajusta en el eje y es aling-items
+
+
+CUANDO FLEX DIRECTION ES COLUMN 
+El que ajusta en el eje x es aling-item
+CUANDO FLEX DIRECTION ES COLUMN 
+El que ajusta en el eje y es justify-content
+*/
+.cardInfoContainer h3{
+    align-self: center;
+
+}
+
+.obraIndexContainer{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #023355;
+    padding: 15px 10px;
+    border-radius: 10px;
+    box-shadow:  23px 23px 19px #989898,
+             -23px -23px 19px #ffffff;
+}
+.obraIndexContainer h4{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.obraIndexContainer img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.titleSectionIndex h3 a{
+    text-align: center;
+    font-size: 2.3rem;
+    color: black;
+}
+.footer{
+    background-color: #023355;
+    padding: 10px 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.linksFooterContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.linksFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.linksFooter li a{
+    color: white;
+    font-size: 1.5rem;
+}
+.contactInfoFooterContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.inversionesContainer{
+    padding: 50px 3% ;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.inversionesCard{
+    display: flex;
+    flex-direction: column;
+    
+}
+.inversionesCard h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Contacto  */
+
+
+.formLinksContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainContentContacto{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.input{
+    border: none;
+    border-bottom: black 1px solid;
+    font-size: 1.2rem;
+}
+.form{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+
+.formContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: black 2px solid;
+    padding: 50px 3%;
+}
+.checkInputContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.obrasMainContent{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 3%;
+}
+
+.obrasInfoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.obrasInfoContainer h3{
+    margin-left: 10px;
+}
+
+
+.mainContentEmpresa{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 3%;
+}
+.mainContentEmpresa section h3{
+    margin-left: 10px;
+}
+.submit{
+    background-color:#023355;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Prueba Grid en page Contacto */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
