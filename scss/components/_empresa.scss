@@ -1,0 +1,56 @@
+.mainContentEmpresa {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 3%;
+    section {
+        h3 {
+            margin-left: 10px;
+            font-size: 1.7rem;
+        }
+    }
+    .containerMision{
+        display: flex;
+        .containerFotoMision{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+        .textoEmpresa{
+            @include texto-empresa-style ($alineacion-texto: left);
+            p{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .containerMisionReverse{
+        display: flex;
+        flex-direction: row-reverse;
+        .textoEmpresa{
+            @include texto-empresa-style ($alineacion-texto: right);
+            p{
+                font-size: 1.3rem;
+            }
+        }
+        .containerFotoMision{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+    .mainContentEmpresa{
+        .containerMision{
+        @include empresa-container-style-mediaquery;
+        }
+        .containerMisionReverse{
+        @include empresa-container-style-mediaquery;
+        }
+    }
+}
+

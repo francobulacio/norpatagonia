@@ -1,0 +1,16 @@
+
+.inversionesContainer {
+    padding: 50px 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .inversionesCard {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+    }
+}
+

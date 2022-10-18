@@ -1,0 +1,242 @@
+.subtitleContainer h2 {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center; }
+
+.form, .mainContentContacto .formContainer, .mainContentContacto .form1 {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh; }
+  .form .inputContainer, .mainContentContacto .formContainer .inputContainer, .mainContentContacto .form1 .inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 500px; }
+    .form .inputContainer .input, .mainContentContacto .formContainer .inputContainer .input, .mainContentContacto .form1 .inputContainer .input {
+      border: none;
+      border-bottom: black 1px solid;
+      font-size: 1.2rem;
+      background-color: transparent; }
+    .form .inputContainer .checkInputContainer, .mainContentContacto .formContainer .inputContainer .checkInputContainer, .mainContentContacto .form1 .inputContainer .checkInputContainer {
+      display: flex;
+      justify-content: space-evenly; }
+
+body {
+  background-image: url("https://img.freepik.com/free-vector/white-elegant-texture-background-style_23-2148432200.jpg?w=2000"); }
+
+.navbarContainer {
+  background-color: #023355;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  margin-bottom: 50px;
+  text-decoration: none; }
+  .navbarContainer .navbar {
+    width: 100%;
+    text-decoration: none; }
+  .navbarContainer nav ul li a {
+    color: white;
+    font-size: 1.3rem; }
+  .navbarContainer .titleContainer {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; }
+    .navbarContainer .titleContainer h1 {
+      color: white; }
+      .navbarContainer .titleContainer h1 a {
+        color: white; }
+  .navbarContainer nav {
+    width: 60%;
+    height: 100%;
+    text-decoration: none; }
+    .navbarContainer nav .linksContainer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%; }
+
+@media screen and (max-width: 1200px) {
+  .navbarContainer {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    gap: 5vh; }
+    .navbarContainer .linksContainer {
+      flex-direction: column;
+      gap: 20px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+
+.footer {
+  background-color: #023355;
+  padding: 10px 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px; }
+  .footer .linksFooterContainer {
+    display: flex;
+    justify-content: space-between; }
+    .footer .linksFooterContainer .linksFooter {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      .footer .linksFooterContainer .linksFooter li a {
+        color: white;
+        font-size: 1.5rem; }
+  .footer .contactInfoFooterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white; }
+
+@media screen and (max-width: 500px) {
+  .linksFooterContainer {
+    flex-direction: column;
+    gap: 30px; }
+  .map {
+    align-self: center; } }
+
+.inversionesContainer {
+  padding: 50px 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px; }
+  .inversionesContainer .inversionesCard {
+    display: flex;
+    flex-direction: column; }
+    .inversionesContainer .inversionesCard h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px; }
+
+.obrasMainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 3%; }
+  .obrasMainContent .obrasInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    .obrasMainContent .obrasInfoContainer h3 {
+      margin-left: 10px; }
+
+.mainContentEmpresa {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 3%; }
+  .mainContentEmpresa section h3 {
+    margin-left: 10px;
+    font-size: 1.7rem; }
+  .mainContentEmpresa .containerMision {
+    display: flex; }
+    .mainContentEmpresa .containerMision .containerFotoMision {
+      width: 50%; }
+      .mainContentEmpresa .containerMision .containerFotoMision img {
+        width: 100%; }
+    .mainContentEmpresa .containerMision .textoEmpresa {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 7vh;
+      justify-content: center;
+      text-align: left; }
+      .mainContentEmpresa .containerMision .textoEmpresa p {
+        font-size: 1.3rem; }
+  .mainContentEmpresa .containerMisionReverse {
+    display: flex;
+    flex-direction: row-reverse; }
+    .mainContentEmpresa .containerMisionReverse .textoEmpresa {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 7vh;
+      justify-content: center;
+      text-align: right; }
+      .mainContentEmpresa .containerMisionReverse .textoEmpresa p {
+        font-size: 1.3rem; }
+    .mainContentEmpresa .containerMisionReverse .containerFotoMision {
+      width: 50%; }
+      .mainContentEmpresa .containerMisionReverse .containerFotoMision img {
+        width: 100%; }
+
+@media screen and (max-width: 1200px) {
+  .mainContentEmpresa .containerMision {
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh; }
+    .mainContentEmpresa .containerMision .textoEmpresa {
+      width: 80%;
+      text-align: center; }
+      .mainContentEmpresa .containerMision .textoEmpresa p {
+        font-size: 1rem; }
+    .mainContentEmpresa .containerMision .containerFotoMision {
+      width: 80%; }
+  .mainContentEmpresa .containerMisionReverse {
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh; }
+    .mainContentEmpresa .containerMisionReverse .textoEmpresa {
+      width: 80%;
+      text-align: center; }
+      .mainContentEmpresa .containerMisionReverse .textoEmpresa p {
+        font-size: 1rem; }
+    .mainContentEmpresa .containerMisionReverse .containerFotoMision {
+      width: 80%; } }
+
+.mainContentContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "form1 form1" "form2 form3";
+  grid-template-rows: 800px 600px; }
+  .mainContentContacto .form2 {
+    grid-area: form2; }
+  .mainContentContacto .form3 {
+    grid-area: form3; }
+  .mainContentContacto .formContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-top: black 2px solid;
+    padding: 50px 3%; }
+    .mainContentContacto .formContainer h3 {
+      font-size: 2rem; }
+  .mainContentContacto .form1 {
+    grid-area: form1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center; }
+    .mainContentContacto .form1 .formLinksContainer {
+      display: flex;
+      justify-content: space-evenly; }
+
+@media screen and (max-width: 1200px) {
+  .mainContentContacto {
+    grid-template-columns: 1fr;
+    grid-auto-rows: max-content;
+    /* grid-template-rows: 800px 600px 600px; */
+    grid-template-areas: "form1" "form2"  "form3";
+    justify-content: center; }
+    .mainContentContacto .form1, .mainContentContacto .form2, .mainContentContacto .form3 {
+      justify-content: center; }
+      .mainContentContacto .form1 .form .inputContainer, .mainContentContacto .form1 .formContainer .inputContainer, .mainContentContacto .form1 .form1 .inputContainer, .mainContentContacto .form2 .form .inputContainer, .mainContentContacto .form2 .formContainer .inputContainer, .mainContentContacto .form2 .form1 .inputContainer, .mainContentContacto .form3 .form .inputContainer, .mainContentContacto .form3 .formContainer .inputContainer, .mainContentContacto .form3 .form1 .inputContainer {
+        width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  .mainContentContacto .formLinksContainer {
+    flex-direction: column;
+    align-items: center;
+    grid-template-rows: 500px 500px 500px; } }

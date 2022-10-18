@@ -1,0 +1,40 @@
+.footer {
+    background-color: map-get($paleta-de-colores , azul );
+    padding: 10px 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    .linksFooterContainer {
+        display: flex;
+        justify-content: space-between;
+        .linksFooter {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            li{
+                a {
+                    color: map-get($paleta-de-colores , blanco );
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .contactInfoFooterContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: map-get($paleta-de-colores , blanco );
+    }
+}
+
+
+@media screen and (max-width: 500px){
+.linksFooterContainer{
+    flex-direction: column;
+    gap: 30px;
+}
+.map{
+    align-self: center;
+}
+}

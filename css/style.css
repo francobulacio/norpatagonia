@@ -15,47 +15,7 @@ body{
 }
 
 /* HEADER */
-.navbarContainer {
-    background-color: #023355;
-    display: flex;
-    flex-direction: row;
-    height: 70px;
-}
 
-.titleContainer {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-nav {
-
-    width: 60%;
-    height: 100%;
-}
-
-.linksContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-
-.titleContainer h1 {
-    color: rgb(255, 255, 255);
-}
-
-nav ul li a {
-    color: white;
-    font-size: 1.3rem;
-}
-
-h1 a{
-    color: white;
-}
 
 
 /* INDEX */
@@ -68,10 +28,7 @@ h1 a{
     padding: 50px 1%;
 }
 
-.subtitleContainer h2 {
-    text-align: center;
-    font-size: 3rem;
-}
+
 
 .cardInfoContainer {
     display: flex;
@@ -81,19 +38,6 @@ h1 a{
     flex-wrap: wrap;
 }
 
-/*
-
-CUANDO FLEX DIRECTION ES ROW (valor por defecto)
-El que ajusta en el eje x es justify-content
-CUANDO FLEX DIRECTION ES ROW (valor por defecto)
-El que ajusta en el eje y es aling-items
-
-
-CUANDO FLEX DIRECTION ES COLUMN 
-El que ajusta en el eje x es aling-item
-CUANDO FLEX DIRECTION ES COLUMN 
-El que ajusta en el eje y es justify-content
-*/
 .cardInfoContainer h3 {
     align-self: center;
 
@@ -128,187 +72,22 @@ El que ajusta en el eje y es justify-content
     color: black;
 }
 
-.footer {
-    background-color: #023355;
-    padding: 10px 3%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
 
-.linksFooterContainer {
-    display: flex;
-    justify-content: space-between;
-}
 
-.linksFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
 
-.linksFooter li a {
-    color: white;
-    font-size: 1.5rem;
-}
-
-.contactInfoFooterContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-}
-
-.inversionesContainer {
-    padding: 50px 3%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.inversionesCard {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.inversionesCard h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
 
 /* Contacto  */
 
 
-.mainContentContacto{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 800px 800px;
-    grid-template-areas:
-    "form1 form1"
-    "form2 form3"
-}
-.input{
-    border: none;
-    border-bottom: black 1px solid;
-    font-size: 1.2rem;
-}
-.form{
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 30px;
-}
-
-
-.formLinksContainer{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.inputContainer{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-}
-
-
-.formContainer{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: black 2px solid;
-    padding: 50px 3%;
-}
-.checkInputContainer{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.form2{
-    grid-area: form2;
-}
-
-.form3{
-    grid-area: form3;
-}
-
-.form1{
-    grid-area: form1;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    justify-content: center;
-}
 
 
 
 /* Termina la sección contacto */
-.obrasMainContent {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 50px 3%;
-}
-
-.obrasInfoContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.obrasInfoContainer h3 {
-    margin-left: 10px;
-}
 
 
-.mainContentEmpresa {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 50px 3%;
-}
 
-.mainContentEmpresa section h3 {
-    margin-left: 10px;
-    font-size: 1.7rem;
-}
 
-.textoEmpresa{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 7vh;
-    justify-content: center;
 
-}
-
-.containerMisionReverse{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.containerMisionReverse .textoEmpresa{
-    text-align: right;
-}
-
-.textoEmpresa p{
-    font-size: 1.3rem;
-}
-
-.containerMision{
-    display: flex;
-}
-
-.containerFotoMision{
-    width: 50%;
-}
-
-.containerFotoMision img{
-    width: 100%;
-}
 
 ul li a:hover{
     transition: all 2s;
@@ -330,94 +109,8 @@ ul li a:hover{
 
 /* Empieza Media query */
 
-@media screen and (max-width: 1200px){
 
-    .mainContentContacto{
-        grid-template-columns: 1fr;
-        grid-auto-rows: max-content;
-        /* grid-template-rows: 800px 600px 600px; */
-        grid-template-areas:
-        "form1"
-        "form2" 
-        "form3";
-        justify-content: center;
-    }
-    .navbarContainer{
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-        gap: 5vh;
-    }
-    .linksContainer{
-        flex-direction: column;
-        gap: 20px;
-    }
     
-    .inputContainer{
-        width: 100%;
-    }
-    
-    .form1{
-        justify-content: center;
-    }
-    
-    .form2{
-        justify-content: center;
-    }
-    
-    .form3{
-        justify-content: center;
-    }
-    
-    .subtitleContainer h2{
-        width: 100%;
-        font-size: 2rem;
-    }
 
-    .containerMision{
-        flex-direction: column;
-        align-items: center;
-        gap: 5vh;
-    }
-
-    .containerMisionReverse{
-        flex-direction: column;
-        align-items: center;
-        gap: 5vh;
-    }
-
-    .textoEmpresa{
-        width: 80%;
-        text-align: center;
-    }
-
-    .containerMisionReverse .textoEmpresa{
-        text-align: center;
-    }
-
-    .textoEmpresa p{
-        font-size: 1rem;
-    }
-
-    .containerFotoMision{
-        width: 80%;
-    }
-    }
-    
-    @media screen and (max-width: 500px){
-    .formLinksContainer{
-        flex-direction: column;
-        align-items: center;
-        grid-template-rows: 500px 500px 500px;
-    }
-    
-    .linksFooterContainer{
-        flex-direction: column;
-        gap: 30px;
-    }
-    .map{
-        align-self: center;
-    }
-    }
 
 /* Termina media query */

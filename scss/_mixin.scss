@@ -1,0 +1,49 @@
+
+
+@mixin texto-empresa-style ($alineacion-texto) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 7vh;
+    justify-content: center;
+    text-align: $alineacion-texto;
+}
+
+@mixin empresa-container-style-mediaquery {
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    .textoEmpresa{
+        width: 80%;
+        text-align: center;
+        p{
+            font-size: 1rem;
+        }
+    }
+    .containerFotoMision{
+        width: 80%;
+    }
+}
+
+.form{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    .inputContainer{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        .input{
+            border: none;
+            border-bottom: black 1px solid;
+            font-size: 1.2rem;
+            background-color: transparent;
+        }
+        .checkInputContainer{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+

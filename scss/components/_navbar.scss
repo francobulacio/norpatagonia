@@ -1,0 +1,55 @@
+.navbarContainer {
+    background-color: map-get($paleta-de-colores , azul );
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    margin-bottom: 50px;
+    text-decoration: none;  
+    .navbar{
+        width: 100%;
+        text-decoration: none;
+    }
+    nav ul li a {
+        color: map-get($paleta-de-colores , blanco );
+        font-size: 1.3rem;
+    }
+    .titleContainer {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: map-get($paleta-de-colores , blanco );
+        h1 {
+            color: map-get($paleta-de-colores , blanco );
+            a{
+                color: map-get($paleta-de-colores , blanco );
+            }
+        }
+    }
+    nav {
+        width: 60%;
+        height: 100%;
+        text-decoration: none;
+        .linksContainer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+.navbarContainer{
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    gap: 5vh;
+    .linksContainer{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+}
+

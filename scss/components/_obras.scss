@@ -1,0 +1,15 @@
+.obrasMainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 3%;
+    .obrasInfoContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h3 {
+            margin-left: 10px;
+        }
+    }
+}
+
