@@ -198,7 +198,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "form1 form1" "form2 form3";
-  grid-template-rows: 800px 600px; }
+  grid-template-rows: 800px 700px; }
   .mainContentContacto .form2 {
     grid-area: form2; }
   .mainContentContacto .form3 {
